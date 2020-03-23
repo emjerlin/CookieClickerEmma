@@ -5,6 +5,8 @@ using UnityEngine;
 public class Clicker : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    int score = 0;
     void Start()
     {
         
@@ -13,21 +15,18 @@ public class Clicker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int end = 0;
 
-        int click = 0;
-
-        while (end == 0) { 
-        OnMouseUp();
-        }
+        print(score);
 
 
-        int OnMouseUp()
-        {
-            click++;
+   
 
-            return click;
-        }
+    }
+    private int OnMouseUp()
+    {
 
+
+        score++;
+        return score;
     }
 }
